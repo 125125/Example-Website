@@ -9,10 +9,13 @@
           <label for="user">Username:</label>
           <input type="text" class="form-control" id="user" name="user">
         </div>
-
         <div class="form-group">
           <label for="pass">Password:</label>
           <input type="password" name="pass" id="pass" class="form-control" autocomplete="new-password">
+        </div>
+        <div class="form-group">
+          <label for="pass2">Confirm Password:</label>
+          <input type="password" name="pass2" id="pass2" class="form-control">
         </div>
         <div class="form-group">
           <label for="email">Email:</label>
