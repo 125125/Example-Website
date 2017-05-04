@@ -41,7 +41,7 @@
         }
         ?>
         <li class='nav-item'>
-          <a class='nav-link' href='forum'>Forum</a>
+          <a class='nav-link disabled' href='#'>Forum</a>
         </li>
       </ul>
     </div>
