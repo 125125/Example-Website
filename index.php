@@ -1,4 +1,5 @@
 <?php
+session_start();
 include('includes/head.php');
 include('includes/nav.php');
 include('includes/left-side.php');

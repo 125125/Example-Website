@@ -18,6 +18,7 @@
         data: data.serialize(),
         success: function (data) {
           $('.output').html(data);
+          $('.myForm input:NOT([type=submit])').val('');
         }
       });
       event.preventDefault();
