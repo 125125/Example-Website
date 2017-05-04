@@ -6,20 +6,38 @@
     <a class="navbar-brand" href="home">ServerName</a>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="home">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="register">Register</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="donate">Donate</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="vote">Vote</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="forum">Forum</a>
+        <?php
+        if(isset($_GET['p'])) {
+          if($_GET['p'] == "home") {
+            echo "<li class='nav-item active'><a class='nav-link' href='home'>Home <span class='sr-only'>(current)</span></a></li>";
+          }else{
+            echo "<li class='nav-item'><a class='nav-link' href='home'>Home</a></li>";
+          }
+        }
+        if(isset($_GET['p'])) {
+          if($_GET['p'] == "register") {
+            echo "<li class='nav-item active'><a class='nav-link' href='register'>Register <span class='sr-only'>(current)</span></a></li>";
+          }else{
+            echo "<li class='nav-item'><a class='nav-link' href='register'>Register</a></li>";
+          }
+        }
+        if(isset($_GET['p'])) {
+          if($_GET['p'] == "donate") {
+            echo "<li class='nav-item active'><a class='nav-link' href='donate'>Donate <span class='sr-only'>(current)</span></a></li>";
+          }else{
+            echo "<li class='nav-item'><a class='nav-link' href='donate'>Donate</a></li>";
+          }
+        }
+        if(isset($_GET['p'])) {
+          if($_GET['p'] == "vote") {
+            echo "<li class='nav-item active'><a class='nav-link' href='vote'>Vote <span class='sr-only'>(current)</span></a></li>";
+          }else{
+            echo "<li class='nav-item'><a class='nav-link' href='vote'>Vote</a></li>";
+          }
+        }
+        ?>
+        <li class='nav-item'>
+          <a class='nav-link' href='forum'>Forum</a>
         </li>
       </ul>
     </div>
