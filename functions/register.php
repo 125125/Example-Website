@@ -34,3 +34,4 @@ if($_POST['pass'] == $_POST['pass2']) {
   // Outputs this result inside <div class="output"></div> in the html form if the passwords missmatch
   echo "<div class='alert alert-warning'><strong>Failed!</strong> Passwords Missmatch</div>";
 }
+?>

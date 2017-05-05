@@ -36,3 +36,4 @@ if($stmt->num_rows > 0) {
 }else{
   echo "<div class='alert alert-danger'><strong>Failed to Login!</strong>Username or Password is not correct !</div>";
 }
+?>
