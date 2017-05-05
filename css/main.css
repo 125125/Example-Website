@@ -5,3 +5,12 @@
 .media-left {
   margin-right:10px;
 }
+
+.media {
+  padding:10px 0;
+  border-bottom:1px solid #999;
+}
+
+.media:last-child {
+  border:none;
+}

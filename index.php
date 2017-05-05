@@ -1,5 +1,6 @@
 <?php
 session_start();
+include('config/dbconf.php');
 include('includes/head.php');
 include('includes/nav.php');
 include('includes/left-side.php');
