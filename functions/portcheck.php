@@ -8,7 +8,7 @@ function onlinestatus($hostip, $portnr) {
   if($fp) {
     return "<font color='00ff00'>Online</font>";
   }else{
-    return "<font color='ff0000'>Online</font>";
+    return "<font color='ff0000'>Offline</font>";
   }
 }
 mysqli_select_db($conn, $dbname);

@@ -9,19 +9,19 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
   <script type="text/javascript">
-  function ajax() {
+  function ajax(id, file) {
     var req = new XMLHttpRequest();
 
     req.onreadystatechange = function() {
       if(req.readyState == 4 && req.status == 200) {
-        document.getElementById('portchecker').innerHTML =  req.responseText;
+        document.getElementById(id).innerHTML =  req.responseText;
       }
     }
 
-    req.open('GET', 'functions/portcheck.php', true);
+    req.open('GET', file, true);
     req.send();
   }
-  setInterval(function(){ajax()},1000);
+  setInterval(function(){ajax("portchecker", "functions/portcheck.php")},1000);
   </script>
   <script type="text/javascript">
   $(document).ready(function() {
