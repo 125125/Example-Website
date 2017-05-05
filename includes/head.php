@@ -9,6 +9,21 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
   <script type="text/javascript">
+  function ajax() {
+    var req = new XMLHttpRequest();
+
+    req.onreadystatechange = function() {
+      if(req.readyState == 4 && req.status == 200) {
+        document.getElementById('portchecker').innerHTML =  req.responseText;
+      }
+    }
+
+    req.open('GET', 'functions/portcheck.php', true);
+    req.send();
+  }
+  setInterval(function(){ajax()},1000);
+  </script>
+  <script type="text/javascript">
   $(document).ready(function() {
     $('.myForm').submit(function (event) {
       var data = $(this);
