@@ -9,16 +9,16 @@
       <!-- Dropdown Link -->
       <?php
       if(isset($_GET['p'])) {
-        echo "<li><a href='#'><i class='fa fa-dashboard fa-lg'></i> Dashboard</a></li>";
+        echo "<li><a href='dashboard'><i class='fa fa-dashboard fa-lg'></i> Dashboard</a></li>";
 
         //First Dropdown
         if($_GET['p'] == "postnews" || $_GET['p'] == "editnews" || $_GET['p'] == "deletenews") {
           echo "<li  data-toggle='collapse' data-target='#products' class='collapsed active'>";
-          echo "<a href='#'><i class='fa fa-gift fa-lg'></i>Manage News<span class='arrow'></span></a>";
+          echo "<a href='#'><i class='fa fa-envelope fa-lg'></i> Manage News <span class='arrow'></span></a>";
           echo "</li>";
         }else{
           echo "<li  data-toggle='collapse' data-target='#products' class='collapsed'>";
-          echo "<a href='#'><i class='fa fa-gift fa-lg'></i>Manage News<span class='arrow'></span></a>";
+          echo "<a href='#'><i class='fa fa-envelope fa-lg'></i> Manage News <span class='arrow'></span></a>";
           echo "</li>";
         }
         echo "<ul class='sub-menu collapse' id='products'>";
@@ -31,11 +31,11 @@
         //Second Dropdown
         if($_GET['p'] == "replyticket" || $_GET['p'] == "delticket" || $_GET['p'] == "assignticket") {
           echo "<li data-toggle='collapse' data-target='#service' class='collapsed active'>";
-          echo "<a href='#'><i class='fa fa-globe fa-lg'></i> Manage Tickets <span class='arrow'></span></a>";
+          echo "<a href='#'><i class='fa fa-ticket fa-lg'></i> Manage Tickets <span class='arrow'></span></a>";
           echo "</li>";
         }else{
           echo "<li data-toggle='collapse' data-target='#service' class='collapsed'>";
-          echo "<a href='#'><i class='fa fa-globe fa-lg'></i> Manage Tickets <span class='arrow'></span></a>";
+          echo "<a href='#'><i class='fa fa-ticket fa-lg'></i> Manage Tickets <span class='arrow'></span></a>";
           echo "</li>";
         }
         echo "<ul class='sub-menu collapse' id='service'>";
@@ -48,11 +48,11 @@
         //Third Dropdown
         if($_GET['p'] == "banacc" || $_GET['p'] == "managegm" || $_GET['p'] == "delacc") {
           echo "<li data-toggle='collapse' data-target='#new' class='collapsed active'>";
-          echo "<a href='#'><i class='fa fa-car fa-lg'></i> Manage Accounts <span class='arrow'></span></a>";
+          echo "<a href='#'><i class='fa fa-user fa-lg'></i> Manage Accounts <span class='arrow'></span></a>";
           echo "</li>";
         }else{
           echo "<li data-toggle='collapse' data-target='#new' class='collapsed'>";
-          echo "<a href='#'><i class='fa fa-car fa-lg'></i> Manage Accounts <span class='arrow'></span></a>";
+          echo "<a href='#'><i class='fa fa-user fa-lg'></i> Manage Accounts <span class='arrow'></span></a>";
           echo "</li>";
         }
         echo "<ul class='sub-menu collapse' id='new'>";
@@ -65,11 +65,11 @@
         //Fourth Dropdown
         if($_GET['p'] == "item" || $_GET['p'] == "npc" || $_GET['p'] == "quest" || $_GET['p'] == "loot" || $_GET['p'] == "instance") {
           echo "<li data-toggle='collapse' data-target='#random' class='collapsed active'><a href='#'>";
-          echo "<i class='fa fa-car fa-lg'></i> SQL Generator <span class='arrow'></span></a>";
+          echo "<i class='fa fa-database fa-lg'></i> SQL Generator <span class='arrow'></span></a>";
           echo "</li>";
         }else{
           echo "<li data-toggle='collapse' data-target='#random' class='collapsed'>";
-          echo "<a href='#'><i class='fa fa-car fa-lg'></i> SQL Generator <span class='arrow'></span></a>";
+          echo "<a href='#'><i class='fa fa-database fa-lg'></i> SQL Generator <span class='arrow'></span></a>";
           echo "</li>";
         }
         echo "<ul class='sub-menu collapse' id='random'>";
@@ -81,13 +81,13 @@
         echo "</ul>";
         //End Fourth Dropdown
 
-        echo "<li><a href='#'><i class='fa fa-user fa-lg'></i> Settings</a></li>";
+        echo "<li><a href='#'><i class='fa fa-cog fa-lg'></i> Settings</a></li>";
 
       }else{
         //First Dropdown
-        echo "<li class='active'><a href='#'><i class='fa fa-dashboard fa-lg'></i> Dashboard</a></li>";
+        echo "<li class='active'><a href='dashboard'><i class='fa fa-dashboard fa-lg'></i> Dashboard</a></li>";
         echo "<li  data-toggle='collapse' data-target='#products' class='collapsed'><a href='#'>";
-        echo "<i class='fa fa-gift fa-lg'></i>Manage News<span class='arrow'></span></a>";
+        echo "<i class='fa fa-envelope fa-lg'></i> Manage News <span class='arrow'></span></a>";
         echo "</li>";
         echo "<ul class='sub-menu collapse' id='products'>";
         echo "<li><a href='postnews'>Post News</a></li>";
@@ -98,7 +98,7 @@
 
         //Second Dropdown
         echo "<li data-toggle='collapse' data-target='#service' class='collapsed'><a href='#'>";
-        echo "<i class='fa fa-globe fa-lg'></i> Manage Tickets <span class='arrow'></span></a>";
+        echo "<i class='fa fa-ticket fa-lg'></i> Manage Tickets <span class='arrow'></span></a>";
         echo "</li>";
         echo "<ul class='sub-menu collapse' id='service'>";
         echo "<li><a href='replyticket'>Reply to Ticket</li>";
@@ -109,7 +109,7 @@
 
         //Third Dropdown
         echo "<li data-toggle='collapse' data-target='#new' class='collapsed'><a href='#'>";
-        echo "<i class='fa fa-car fa-lg'></i> Manage Accounts <span class='arrow'></span></a>";
+        echo "<i class='fa fa-user fa-lg'></i> Manage Accounts <span class='arrow'></span></a>";
         echo "</li>";
         echo "<ul class='sub-menu collapse' id='new'>";
         echo "<li><a href='banacc'>Ban Account/IP</li>";
@@ -120,7 +120,7 @@
 
         //Fourth Dropdown
         echo "<li data-toggle='collapse' data-target='#random' class='collapsed'><a href='#'>";
-        echo "<i class='fa fa-car fa-lg'></i> SQL Generator <span class='arrow'></span></a>";
+        echo "<i class='fa fa-database fa-lg'></i> SQL Generator <span class='arrow'></span></a>";
         echo "</li>";
         echo "<ul class='sub-menu collapse' id='random'>";
         echo "<li><a href='item'>Create Item</li>";
@@ -131,12 +131,12 @@
         echo "</ul>";
         //End Fourth Dropdown
 
-        echo "<li><a href='#'><i class='fa fa-user fa-lg'></i> Settings</a></li>";
+        echo "<li><a href='settings'><i class='fa fa-cog fa-lg'></i> Settings</a></li>";
       }
       ?>
 
       <!-- Single Link -->
-      <li><a href="#"><i class="fa fa-users fa-lg"></i> Logout</a></li>
+      <li><a href="#"><i class="fa fa-sign-out fa-lg"></i> Logout</a></li>
     </ul>
   </div>
 </div>

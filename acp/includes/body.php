@@ -11,6 +11,6 @@
     }
   }else{
     // include home.php if the p is not defined in the url
-    include("pages/home.php");
+    include("pages/dashboard.php");
   }
 ?>
